@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminhos do Senhor</title>
+    <link rel="stylesheet" href="/src/estilo.css">
+</head>
+<body>
+  <script src="/src/script.js"></script>
+    <header class="header">
+        <a href="/index.html"><img src="/Imagens/logo-caminhos-do-senhor.png" style="border-radius: 100%;"></a>
+        <nav>
+            <ul class="menu" id="menu">
+                <li><a href="#sobreNos"><strong>Sobre nós</strong></a></li>
+                <li><a href="#projetos"><strong>Projetos</strong></a></li>
+                <li><a href="https://vakinha.com.br" id="destaque"><strong>Ajude a Construir!</strong></a></li>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="btnMenu" onclick="abrirMenu()" ondblclick="esconderMenu()" id="btnMenu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+    </header>
+
+    <div id="menuOculto" class="menuOculto" onmouseleave="esconderMenu()">
+      <ul>
+          <li><a href="#sobreNos"><strong>Sobre nós</strong></a></li>
+          <li><a href="#projetos"><strong>Projetos</strong></a></li>
+          <li><a href="https://vakinha.com.br">Ajude a Construir!</a></li>
+          </li>
+      </ul>
+    </div>
+
+
+    <section class="projetos" id="projetos" onclick="esconderMenu()">
+        <h1>Nesse site você pode nos ajudar a construir o projeto <strong id="destaqueProjeto">Caminhos do Senhor!</strong></h1>
+        <h2>Veja como funciona o projeto:</h2>
+          <div>
+            <video id="video" controls preload="metadata">
+              <source src="/Videos/Projeto.mp4" type="video/mp4">
+            </video>
+          </div>
+        <p>Clique no botão abaixo para contribuir:</p>
+        <a href="https://vakinha.com.br"><input type="button" value="Contribuir!"></a>
+    </section>
+
+
+    <section id="sobreNos" class="sobreNos">
+       <h1>Quem Nós Somos?</h1>
+        <h2>Testemunho Lindalva Antonia:</h2>
+        <div>
+          <video id="video" controls preload="metadata">
+            <source src="/Videos/Testemunho - Lindalva Antônia.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p>Inspirada por Deus a criar o projeto Caminhos do Senhor por causa das crianças que ficam nas ruas a mercê do mundo Lindalva decidiu contruir um lugar mais adequado para elas:
+            <br>
+            Estudar,
+            Lanchar,
+            Brincar e
+            Conhecer a Cristo.
+        </p>
+
+        <a href="https://www.vakinha.com.br/"><input type="button" value="Clique aqui para contribuir"></a>
+    </section>
+
+    <section class="provaSocial">
+      <h1>O que já foi feito:</h1>
+      <img src="/Imagens/Crianças.png">
+      <img src="/Imagens/Entrevista Lindalva.png">
+      <img src="/Imagens/Cestas Básicas.png">
+      <img src="/Imagens/Lindalva Noel.png">
+      <img src="/Imagens/Trabalho Lindalva.png">
+      <br>
+      <a href="https://www.vakinha.com.br/"><input type="button" value="Clique aqui para contribuir"></a>
+    </section>
+
+    <footer class="rodape">
+      <p>&copy;Caminhos Do Senhor</p>
+    </footer>
+
+
+</body>
+</html>
